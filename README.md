@@ -14,7 +14,7 @@ Read-me-gen is a tool for creating a readme document for a project using node.js
 
 [Click here for Deployed Site]()
 
-
+![video](./assets/Video/Untitled_%20Jan%2024%2C%202023%2012_04%20AM.webm)
 
 
 ## Table of Contents 
