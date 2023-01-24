@@ -56,8 +56,8 @@ const answers = [
 // Ask the title of the readme, description, installation instructions, usage information, contribution guidelines, and test instructions
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) =>
+function writeToFile(fileName, answers) {
+    fs.writeFile(fileName, answers, (err) =>
     err? console.log(err) : console.log('Success!')
     );
     
@@ -66,10 +66,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(answers)
-    .then((data) => {
-        writeToFile('README2.md', generateMarkdown(data));
-        console.log(data);
-        console.log(generateMarkdown(data));
+    .then((generateMarkdown) => {
+        writeToFile('README2.md', generateMarkdown(answers));
+        console.log(answers);
+        console.log(generateMarkdown(answers));
 })}
 
 
