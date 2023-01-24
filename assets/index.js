@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const fs = require ('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [
+const answers = [
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -18,7 +18,7 @@ const questions = [
     {
         type: 'input',
         message: 'What are the installation instructions?',
-        name: 'installation',
+        name: 'install',
     }, 
     {
         type: 'input',
@@ -56,10 +56,22 @@ const questions = [
 // Ask the title of the readme, description, installation instructions, usage information, contribution guidelines, and test instructions
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err? console.log(err) : console.log('Success!')
+    );
+    
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(answers)
+    .then((data) => {
+        writeToFile('README2.md', generateMarkdown(data));
+        console.log(data);
+        console.log(generateMarkdown(data));
+})}
+
 
 // Function call to initialize app
 init();
