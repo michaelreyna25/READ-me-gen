@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
 
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(answers) {
-    return `# ${answers.title}
+    var readMe = `# ${answers.title}
 
   ## Description 
   
@@ -86,6 +86,7 @@ function renderLicenseLink(license) {
   
   © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 `;
+return readMe
   }
 
   module.exports = generateMarkdown;
