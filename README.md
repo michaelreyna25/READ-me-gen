@@ -4,17 +4,16 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| HTML    | ) | 
-| CSS     |       |   
+|  JavaScript  |  | 
+|      |       |   
 | Git |      |  
 
 ## Description
 Read-me-gen is a tool for creating a readme document for a project using node.js to generate a README.md file with questions being asked so it can take in those parameters and develope professional documentation.
 
 
-[Click here for Deployed Site]()
 
-![caption](./assets/Video/Untitled_%20Jan%2024%2C%202023%2012_04%20AM.webm)
+![caption](./assets/readme%20generater.mp4)
 
 
 ## Table of Contents 
